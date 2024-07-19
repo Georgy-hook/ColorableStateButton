@@ -9,7 +9,7 @@
 
 import UIKit
 
-@objc public class INButton: UIButton {
+@objc public class ColorableStateButton: UIButton {
     
     // MARK: - State Properties
     
@@ -22,10 +22,10 @@ import UIKit
     // MARK: - Animation Properties
     
     /// The duration of the scaling animation in seconds
-    private let animationDuration: TimeInterval = 0.15
+    @objc public var animationDuration: TimeInterval = 0.15
     
     /// The scale factor applied to the button's transform during the animation.
-    private let scaleFactor: CGFloat = 0.95
+    @objc public var scaleFactor: CGFloat = 0.95
     
     /// The haptic feedback generator used for touch feedback.
     private let impactFeedbackgenerator = UIImpactFeedbackGenerator(style: .light)
